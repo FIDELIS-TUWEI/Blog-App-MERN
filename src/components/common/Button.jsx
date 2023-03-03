@@ -1,8 +1,8 @@
 import Button from "@mui/material/Button";
 
-const BasicButtons = () => {
+const BasicButtons = ({title}) => {
     return ( 
-        <Button variant="contained">Login</Button>
+        <Button variant="contained">{title}</Button>
     );
 }
  

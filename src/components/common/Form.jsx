@@ -2,11 +2,11 @@ import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import Button from './Button'
 
-const BasicTextFields = () => {
+const BasicTextFields = ({title}) => {
     return (
         <div>
             <div className="heading__container">
-                <h3>Login to your Account</h3>
+                <h3>{title} Account</h3>
             </div> 
             <Box
                 component="form"
@@ -19,7 +19,7 @@ const BasicTextFields = () => {
                 <TextField id="outlined-basic" label="Enter your Email" variant="outlined" />
                 <TextField id="password" label="Enter your password" variant="outlined" />
             </Box>
-            <Button />
+            <Button title={title}/>
         </div>
     );
 }
