@@ -1,5 +1,6 @@
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
+import Button from './Button'
 
 const BasicTextFields = () => {
     return (
@@ -18,6 +19,7 @@ const BasicTextFields = () => {
                 <TextField id="outlined-basic" label="Enter your Email" variant="outlined" />
                 <TextField id="password" label="Enter your password" variant="outlined" />
             </Box>
+            <Button />
         </div>
     );
 }
