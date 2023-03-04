@@ -5,6 +5,12 @@ const Home = () => {
     // useNavigate
     const navigate = useNavigate()
 
+    // handleLogout function
+    const handleLogout = () => {
+        sessionStorage.removeItem('Auth Token')
+        navigate('/login')
+    }
+
     // useEffect for private routes
     useEffect(() => {
         //check if token is valid go to home
@@ -17,10 +23,12 @@ const Home = () => {
         if (!authToken) {
             navigate('/login')
         }
-    }, [])
+    }, []);
+
     return ( 
         <>
             <h3>Home page</h3>
+            <button onClick={handleLogout}>Logout</button>
         </>
      );
 }
