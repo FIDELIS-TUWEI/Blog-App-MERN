@@ -1,8 +1,10 @@
 import Button from "@mui/material/Button";
 
-const BasicButtons = ({title}) => {
+const BasicButtons = ({title, handleAction}) => {
     return ( 
-        <Button variant="contained">{title}</Button>
+        <Button variant="contained" onClick={handleAction}>
+            {title}
+        </Button>
     );
 }
  
