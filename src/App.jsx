@@ -33,7 +33,9 @@ function App() {
           //session storage
           sessionStorage.setItem('Auth Token', response._tokenResponse.refreshToken)
         }).catch((error) => {
-          console.log(error)
+          if (error.code === 'auth/email-already-in-use') {
+            toast.error('Email Already in Use')
+          }
         })
     }
 
