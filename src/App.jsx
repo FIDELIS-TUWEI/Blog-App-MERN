@@ -1,16 +1,29 @@
 import './App.css'
 import Form from './components/common/Form'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
+import { useState } from 'react';
+import { app } from './firebase-config'
+import { 
+  getAuth, 
+  signInWithEmailAndPassword,
+  createUserWithEmailAndPassword 
+} from 'firebase/auth'
 
 function App() {
   //useState
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
 
-  // function to handleAction
-  const handleAction = () => {
-
+  // function to handleAction with unique id
+  const handleAction = (id) => {
+    const authentication = getAuth();
+    // createuser with unique id
+    if (id === 2) {
+      createUserWithEmailAndPassword(authentication, email, password)
+        .then((response) => {
+          console.log(response)
+        })
+    }
   }
 
   return (
@@ -24,7 +37,7 @@ function App() {
                 title="Login" 
                 setEmail={setEmail}
                 setPassword={setPassword}
-                handleAction={() => handleAction()}
+                handleAction={() => handleAction(1)}
               />} 
           />
 
@@ -35,7 +48,7 @@ function App() {
                 title="Register"
                 setEmail={setEmail}
                 setPassword={setPassword}
-                handleAction={() => handleAction()}
+                handleAction={() => handleAction(2)}
               />} 
           />
         </Routes>
