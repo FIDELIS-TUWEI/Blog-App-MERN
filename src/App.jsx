@@ -2,7 +2,7 @@ import './App.css'
 import Form from './components/common/Form'
 import Home from './components/common/Home';
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { app } from './firebase-config'
 import { 
   getAuth, 
@@ -31,6 +31,14 @@ function App() {
         })
     }
   }
+
+  // useEffect to check authToken
+  useEffect(() => {
+    let authToken = sessionStorage.getItem('Auth Token')
+    if (authToken) {
+      navigate('/home')
+    }
+  }, []);
 
   return (
       <div className="App">
