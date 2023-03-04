@@ -8,6 +8,11 @@ function App() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
 
+  // function to handleAction
+  const handleAction = () => {
+
+  }
+
   return (
     <Router>
       <div className="App">
@@ -19,6 +24,7 @@ function App() {
                 title="Login" 
                 setEmail={setEmail}
                 setPassword={setPassword}
+                handleAction={() => handleAction()}
               />} 
           />
 
@@ -28,7 +34,8 @@ function App() {
               <Form 
                 title="Register"
                 setEmail={setEmail}
-                setPassword={setPassword} 
+                setPassword={setPassword}
+                handleAction={() => handleAction()}
               />} 
           />
         </Routes>
