@@ -21,7 +21,8 @@ function App() {
     if (id === 2) {
       createUserWithEmailAndPassword(authentication, email, password)
         .then((response) => {
-          console.log(response)
+          //session storage
+          sessionStorage.setItem('Auth Token', response._tokenResponse.refreshToken)
         })
     }
   }
