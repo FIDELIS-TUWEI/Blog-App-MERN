@@ -1,7 +1,7 @@
 import './App.css'
 import Form from './components/common/Form'
 import Home from './components/common/Home';
-import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { app } from './firebase-config'
 import { 
@@ -9,6 +9,10 @@ import {
   signInWithEmailAndPassword,
   createUserWithEmailAndPassword 
 } from 'firebase/auth'
+
+// react-toastify
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'
 
 function App() {
   //useState
@@ -28,6 +32,24 @@ function App() {
           navigate("/home")
           //session storage
           sessionStorage.setItem('Auth Token', response._tokenResponse.refreshToken)
+        }).catch((error) => {
+          console.log(error)
+        })
+    }
+
+    // login user with unique id
+    if (id === 1) {
+      signInWithEmailAndPassword(authentication, email, password)
+        .then((response) => {
+          navigate('/home')
+          sessionStorage.setItem('Auth Token', response._tokenResponse.refreshToken)
+        }).catch((error) => {
+          if (error.code === 'auth/wrong-password') {
+            toast.error('Please check the Password')
+          }
+          if (error.code === 'auth/user-not-found') {
+            toast.error('Please check the Email')
+          }
         })
     }
   }
@@ -42,6 +64,7 @@ function App() {
 
   return (
       <div className="App">
+        <ToastContainer />
         <Routes>
           <Route path='/home' element={<Home />} />
           <Route 
