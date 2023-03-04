@@ -1,5 +1,6 @@
 import './App.css'
 import Form from './components/common/Form'
+import Home from './components/common/Home';
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { app } from './firebase-config'
@@ -14,6 +15,9 @@ function App() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
 
+  //useNavigate
+  const navigate = useNavigate()
+
   // function to handleAction with unique id
   const handleAction = (id) => {
     const authentication = getAuth();
@@ -21,6 +25,7 @@ function App() {
     if (id === 2) {
       createUserWithEmailAndPassword(authentication, email, password)
         .then((response) => {
+          navigate("/home")
           //session storage
           sessionStorage.setItem('Auth Token', response._tokenResponse.refreshToken)
         })
@@ -28,9 +33,9 @@ function App() {
   }
 
   return (
-    <Router>
       <div className="App">
         <Routes>
+          <Route path='/home' element={<Home />} />
           <Route 
             path='login' 
             element={
@@ -54,7 +59,6 @@ function App() {
           />
         </Routes>
       </div>
-    </Router>
   )
 }
 
