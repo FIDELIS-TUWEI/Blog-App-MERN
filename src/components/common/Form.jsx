@@ -2,9 +2,13 @@ import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import Button from './Button'
 
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+
 const BasicTextFields = ({title, setEmail, setPassword, handleAction}) => {
+    // theme
+    const theme = createTheme()
     return (
-        <div>
+        <ThemeProvider theme={theme}>
             <div className="heading__container">
                 <h3>{title} Account</h3>
             </div> 
@@ -30,7 +34,7 @@ const BasicTextFields = ({title, setEmail, setPassword, handleAction}) => {
                 />
             </Box>
             <Button title={title} handleAction={handleAction}/>
-        </div>
+        </ThemeProvider>
     );
 }
  
