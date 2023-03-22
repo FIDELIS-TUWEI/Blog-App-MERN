@@ -9,7 +9,7 @@ const BasicTextFields = ({title, setEmail, setPassword, handleAction}) => {
     const theme = createTheme()
     return (
         <ThemeProvider theme={theme}>
-            <Grid>
+            <Grid container component="main" sx={{height: '100vh'}}>
                 <Box
                     component="form"
                     sx={{
