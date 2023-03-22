@@ -3,6 +3,7 @@ import TextField from "@mui/material/TextField";
 import Button from './Button'
 
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { CssBaseline } from "@mui/material/CssBaseline";
 
 const BasicTextFields = ({title, setEmail, setPassword, handleAction}) => {
     // theme
@@ -10,6 +11,7 @@ const BasicTextFields = ({title, setEmail, setPassword, handleAction}) => {
     return (
         <ThemeProvider theme={theme}>
             <Grid container component="main" sx={{height: '100vh'}}>
+                <CssBaseline />
                 <Box
                     component="form"
                     sx={{
