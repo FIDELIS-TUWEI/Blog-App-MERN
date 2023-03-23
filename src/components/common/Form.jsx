@@ -38,25 +38,35 @@ const BasicTextFields = ({title, setEmail, setPassword, handleAction}) => {
                     square
                 >
                     <Box
-                        component="form"
                         sx={{
-                            '& > :not(style)' : {m: 1, width: '25ch'},
+                            my: 8,
+                            mx: 4,
+                            display: 'flex',
+                            flexDirection: 'column',
+                            alignItems: 'center',
                         }}
-                        noValidate
-                        autoComplete="off"
                     >
-                        <TextField 
-                            id="outlined-basic" 
-                            label="Enter your Email" 
-                            variant="outlined"
-                            onChange={(e) => setEmail(e.target.value)} 
-                        />
-                        <TextField 
-                            id="password" 
-                            label="Enter your password" 
-                            variant="outlined" 
-                            onChange={(e) => setPassword(e.target.value)}
-                        />
+                        <Box
+                            component="form"
+                            sx={{
+                                '& > :not(style)' : {m: 1, width: '25ch'},
+                            }}
+                            noValidate
+                            autoComplete="off"
+                        >
+                            <TextField 
+                                id="outlined-basic" 
+                                label="Enter your Email" 
+                                variant="outlined"
+                                onChange={(e) => setEmail(e.target.value)} 
+                            />
+                            <TextField 
+                                id="password" 
+                                label="Enter your password" 
+                                variant="outlined" 
+                                onChange={(e) => setPassword(e.target.value)}
+                            />
+                        </Box>
                     </Box>
                     <Button title={title} handleAction={handleAction}/>
                 </Grid>
