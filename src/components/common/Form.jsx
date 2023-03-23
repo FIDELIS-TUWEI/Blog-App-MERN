@@ -4,6 +4,10 @@ import Button from './Button'
 
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { CssBaseline } from "@mui/material/CssBaseline";
+import Avatar from '@mui/material/Avatar';
+import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
+import { Typography } from "@mui/material";
+
 
 const BasicTextFields = ({title, setEmail, setPassword, handleAction}) => {
     // theme
@@ -46,11 +50,17 @@ const BasicTextFields = ({title, setEmail, setPassword, handleAction}) => {
                             alignItems: 'center',
                         }}
                     >
+
+                        <Avatar>
+                            <LockOutlinedIcon />
+                        </Avatar>
+
+                        <Typography>
+                            {title} Page
+                        </Typography>
                         <Box
                             component="form"
-                            sx={{
-                                '& > :not(style)' : {m: 1, width: '25ch'},
-                            }}
+                            sx={{ mt: 1 }}
                             noValidate
                             autoComplete="off"
                         >
