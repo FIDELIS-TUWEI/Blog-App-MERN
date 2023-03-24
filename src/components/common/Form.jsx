@@ -9,9 +9,14 @@ import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 import LockOutlinedIcon from '@mui/material/LockOutlined'
 
-const Form = () => {
+
+// Theme
+const theme = createTheme()
+const Form = ({title, setEmail, setPassword, handleAction}) => {
     return ( 
-        <></>
+        <ThemeProvider theme={theme}>
+
+        </ThemeProvider>
      );
 }
  
