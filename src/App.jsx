@@ -1,9 +1,8 @@
 import './App.css'
 import Form from './components/common/Form'
 import Home from './components/common/Home';
-import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
+import { Routes, Route, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { app } from './firebase-config'
 import { 
   getAuth, 
   signInWithEmailAndPassword,
