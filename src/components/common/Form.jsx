@@ -60,9 +60,38 @@ const Form = ({title, setEmail, setPassword, handleAction}) => {
                         <Avatar sx={{ m: 1, bgcolor: 'secondary-main' }}>
                             <LockOutlinedIcon />
                         </Avatar>
+
                         <Typography>
                             {title} Page
                         </Typography>
+
+                        <Box
+                            sx={{ mt: 1 }}
+                            component= 'form'
+                            noValidate
+                            autoComplete="off"
+                        >
+                            <TextField
+                                margin="normal"
+                                fullWidth
+                                id='email'
+                                label='Enter Your Email'
+                                variant='outlined'
+                                type={"password"}
+                                required
+                                onChange={(e) => setEmail(e.target.value)}
+                            />
+                            <TextField
+                                margin="normal"
+                                fullWidth
+                                id="password"
+                                label='Enter Your Password'
+                                variant="outlined"
+                                type={'password'}
+                                required
+                                onChange={(e) => setPassword(e.target.value)}
+                            />
+                        </Box>
                     </Box>
                 </Grid>
             </Grid>
