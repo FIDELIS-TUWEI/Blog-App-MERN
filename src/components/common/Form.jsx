@@ -9,6 +9,8 @@ import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined'
 
+import Button from './Button'
+
 
 // Theme
 const theme = createTheme()
