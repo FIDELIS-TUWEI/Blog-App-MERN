@@ -39,7 +39,17 @@ const Form = ({title, setEmail, setPassword, handleAction}) => {
                     }}
                 />
 
-                <Grid></Grid>
+                <Grid
+                    item
+                    xs={12}
+                    sm={8}
+                    md={5}
+                    component={Paper}
+                    elevation={6}
+                    square
+                >
+                    <Box></Box>
+                </Grid>
             </Grid>
         </ThemeProvider>
      );
