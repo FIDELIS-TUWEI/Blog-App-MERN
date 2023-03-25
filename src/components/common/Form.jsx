@@ -7,7 +7,7 @@ import Paper from "@mui/material/Paper";
 import Avatar from "@mui/material/Avatar";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
-import LockIcon from '@mui/material/LockIcon'
+import LockOutlinedIcon from '@mui/material/LockOutlined'
 
 
 // Theme
@@ -58,7 +58,7 @@ const Form = ({title, setEmail, setPassword, handleAction}) => {
                         }}
                     >
                         <Avatar sx={{ m: 1, bgcolor: 'secondary-main' }}>
-                            <LockIcon />
+                            <LockOutlinedIcon />
                         </Avatar>
 
                         <Typography>
@@ -91,6 +91,14 @@ const Form = ({title, setEmail, setPassword, handleAction}) => {
                                 required
                                 onChange={(e) => setPassword(e.target.value)}
                             />
+
+                            <Button title={title} handleAction={handleAction} />
+
+                            <Grid container>
+                                <Grid item>
+                                    Go back <Link href="/">Home</Link>
+                                </Grid>
+                            </Grid>
                         </Box>
                     </Box>
                 </Grid>
