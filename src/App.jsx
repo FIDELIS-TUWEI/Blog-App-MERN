@@ -11,9 +11,11 @@ import {
 // react-toastify
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
-import { ThemeProvider } from '@mui/material';
+import { createTheme, ThemeProvider } from '@mui/material';
 
 function App() {
+  //theme
+  const theme = createTheme()
   //useState
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
@@ -28,6 +30,7 @@ function App() {
     if (id === 2) {
       createUserWithEmailAndPassword(authentication, email, password)
         .then((response) => {
+          window.alert('Succesful SignUp')
           navigate("/home")
           //session storage
           sessionStorage.setItem('Auth Token', response._tokenResponse.refreshToken)
@@ -42,6 +45,7 @@ function App() {
     if (id === 1) {
       signInWithEmailAndPassword(authentication, email, password)
         .then((response) => {
+          window.alert('Welcome Back')
           navigate('/home')
           sessionStorage.setItem('Auth Token', response._tokenResponse.refreshToken)
         }).catch((error) => {
@@ -71,6 +75,7 @@ function App() {
             <Route path='/home' element={<Home />} />
             <Route 
               path='/login' 
+              index
               element={
                 <Form 
                   title="Login" 
