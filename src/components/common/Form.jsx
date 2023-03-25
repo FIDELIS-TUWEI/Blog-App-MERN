@@ -7,7 +7,7 @@ import Paper from "@mui/material/Paper";
 import Avatar from "@mui/material/Avatar";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
-import LockOutlinedIcon from '@mui/material/LockOutlined'
+import LockOutlinedIcon from '@mui/icons-material/LockOutlined'
 
 
 // Theme
