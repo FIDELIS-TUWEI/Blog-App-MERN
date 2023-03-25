@@ -1,4 +1,3 @@
-import './App.css'
 import Form from './components/common/Form'
 import Home from './components/common/Home';
 import { Routes, Route, useNavigate } from 'react-router-dom';
@@ -12,6 +11,7 @@ import {
 // react-toastify
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
+import { ThemeProvider } from '@mui/material';
 
 function App() {
   //useState
@@ -65,31 +65,33 @@ function App() {
 
   return (
       <div className="App">
-        <ToastContainer />
-        <Routes>
-          <Route path='/home' element={<Home />} />
-          <Route 
-            path='login' 
-            element={
-              <Form 
-                title="Login" 
-                setEmail={setEmail}
-                setPassword={setPassword}
-                handleAction={() => handleAction(1)}
-              />} 
-          />
+        <ThemeProvider theme={theme}>
+          <ToastContainer />
+          <Routes>
+            <Route path='/home' element={<Home />} />
+            <Route 
+              path='/login' 
+              element={
+                <Form 
+                  title="Login" 
+                  setEmail={setEmail}
+                  setPassword={setPassword}
+                  handleAction={() => handleAction(1)}
+                />} 
+            />
 
-          <Route 
-            path='register' 
-            element={
-              <Form 
-                title="Register"
-                setEmail={setEmail}
-                setPassword={setPassword}
-                handleAction={() => handleAction(2)}
-              />} 
-          />
-        </Routes>
+            <Route 
+              path='/register' 
+              element={
+                <Form 
+                  title="Register"
+                  setEmail={setEmail}
+                  setPassword={setPassword}
+                  handleAction={() => handleAction(2)}
+                />} 
+            />
+          </Routes>
+        </ThemeProvider>
       </div>
   )
 }
