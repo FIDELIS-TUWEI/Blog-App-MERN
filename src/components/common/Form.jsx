@@ -48,7 +48,22 @@ const Form = ({title, setEmail, setPassword, handleAction}) => {
                     elevation={6}
                     square
                 >
-                    <Box></Box>
+                    <Box
+                        sx={{
+                            my: 8,
+                            mx: 4,
+                            display: 'flex',
+                            flexDirection: 'column',
+                            alignItems: 'center',
+                        }}
+                    >
+                        <Avatar sx={{ m: 1, bgcolor: 'secondary-main' }}>
+                            <LockOutlinedIcon />
+                        </Avatar>
+                        <Typography>
+                            {title} Page
+                        </Typography>
+                    </Box>
                 </Grid>
             </Grid>
         </ThemeProvider>
