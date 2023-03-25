@@ -7,7 +7,7 @@ import Paper from "@mui/material/Paper";
 import Avatar from "@mui/material/Avatar";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
-import LockOutlinedIcon from '@mui/material/LockOutlined'
+import LockIcon from '@mui/material/LockIcon'
 
 
 // Theme
@@ -58,7 +58,7 @@ const Form = ({title, setEmail, setPassword, handleAction}) => {
                         }}
                     >
                         <Avatar sx={{ m: 1, bgcolor: 'secondary-main' }}>
-                            <LockOutlinedIcon />
+                            <LockIcon />
                         </Avatar>
 
                         <Typography>
