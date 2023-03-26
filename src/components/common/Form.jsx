@@ -89,7 +89,7 @@ const Form = ({title, setEmail, setPassword, handleAction}) => {
                                 id='email'
                                 label='Enter Your Email'
                                 variant='outlined'
-                                type={"password"}
+                                type={"Email"}
                                 required
                                 onChange={(e) => setEmail(e.target.value)}
                             />
