@@ -21,7 +21,10 @@ const theme = createTheme()
 const Form = ({title, setEmail, setPassword, handleAction}) => {
     // pasword visibility state
     const [showPassword, SetShowPassword] = usestate(false)
-    
+
+    // handleShowPassword
+    const handleClickShow = () => SetShowPassword((show) => !show)
+
     return ( 
         <ThemeProvider theme={theme}>
             <Grid
