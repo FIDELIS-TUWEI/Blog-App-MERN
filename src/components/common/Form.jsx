@@ -90,7 +90,7 @@ const Form = ({title, setEmail, setPassword, handleAction}) => {
                             <TextField
                                 margin="normal"
                                 fullWidth
-                                id="outlined-start-adornment"
+                                id="password"
                                 label='Enter Your Password'
                                 variant="outlined"
                                 type={'password'}
