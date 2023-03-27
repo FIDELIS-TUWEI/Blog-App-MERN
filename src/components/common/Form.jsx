@@ -12,6 +12,7 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined'
 import Button from './Button'
 import { IconButton, InputAdornment } from "@mui/material";
 import { useState } from "react";
+import { Visibility, VisibilityOff } from "@mui/icons-material";
 
 
 // Theme
@@ -98,17 +99,17 @@ const Form = ({title, setEmail, setPassword, handleAction}) => {
                                 id="password"
                                 label='Enter Your Password'
                                 variant="outlined"
-                                type={'password'}
+                                type={ showPassword ? 'text' : 'password'}
                                 required
                                 onChange={(e) => setPassword(e.target.value)}
-                                endAdornment={
+                                endadornment={
                                     <InputAdornment position="end">
                                         <IconButton
                                             aria-label="toggle password visibility"
                                             onClick={handleClickShowPassword}
                                             edge="end"
                                         >
-                                            {}
+                                            {showPassword ? <VisibilityOff /> : <Visibility />}
                                         </IconButton>
                                     </InputAdornment>
                                 }
