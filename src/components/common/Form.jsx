@@ -8,9 +8,6 @@ import Avatar from "@mui/material/Avatar";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined'
-import IconButton from "@mui/material/IconButton";
-import Visibility from '@mui/icons-material/Visibility'
-import VisibilityOff from '@mui/icons-material/VisibilityOff'
 
 import Button from './Button'
 
@@ -19,11 +16,6 @@ import Button from './Button'
 const theme = createTheme()
 
 const Form = ({title, setEmail, setPassword, handleAction}) => {
-    // pasword visibility state
-    const [showPassword, SetShowPassword] = usestate(false)
-
-    // handleShowPassword
-    const handleClickShow = () => SetShowPassword((show) => !show)
 
     return ( 
         <ThemeProvider theme={theme}>
