@@ -10,12 +10,21 @@ import Link from "@mui/material/Link";
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined'
 
 import Button from './Button'
-
+import { IconButton, InputAdornment } from "@mui/material";
+import { Visibility, VisibilityOff } from "@mui/icons-material";
+import { useState } from "react";
 
 // Theme
 const theme = createTheme()
 
 const Form = ({title, setEmail, setPassword, handleAction}) => {
+    
+    // useState
+    const [showPassword, setShowPassword] = useState();
+
+    // function to handleShow Event
+    const handleClickShowPassword = () => setShowPassword(!showPassword);
+    const handleMouseDownPassword = () => setShowPassword(!showPassword);
 
     return ( 
         <ThemeProvider theme={theme}>
@@ -91,9 +100,22 @@ const Form = ({title, setEmail, setPassword, handleAction}) => {
                                 id="password"
                                 label='Enter Your Password'
                                 variant="outlined"
-                                type={'password'}
+                                type={  showPassword ? 'text' : 'password' }
                                 required
                                 onChange={(e) => setPassword(e.target.value)}
+                                InputProps={{
+                                    endAdornment: (
+                                        <InputAdornment position="end">
+                                            <IconButton
+                                                aria-label="toggle password visibility"
+                                                onClick={handleClickShowPassword}
+                                                onMouseDown={handleMouseDownPassword}
+                                            >
+                                                {showPassword ? <Visibility /> : <VisibilityOff />}
+                                            </IconButton>
+                                        </InputAdornment>
+                                    )
+                                }}
                             />
 
                             <Button title={title} handleAction={handleAction} />
