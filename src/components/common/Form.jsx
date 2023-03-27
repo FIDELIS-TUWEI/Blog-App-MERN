@@ -10,6 +10,8 @@ import Link from "@mui/material/Link";
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined'
 
 import Button from './Button'
+import { InputAdornment } from "@mui/material";
+import VisibilityIcon from '@mui/icons-material/Visibility'
 
 
 // Theme
@@ -88,12 +90,15 @@ const Form = ({title, setEmail, setPassword, handleAction}) => {
                             <TextField
                                 margin="normal"
                                 fullWidth
-                                id="password"
+                                id="outlined-start-adornment"
                                 label='Enter Your Password'
                                 variant="outlined"
                                 type={'password'}
                                 required
                                 onChange={(e) => setPassword(e.target.value)}
+                                InputProps={{
+                                    endAdornment: <InputAdornment><VisibilityIcon /></InputAdornment>
+                                }}
                             />
 
                             <Button title={title} handleAction={handleAction} />
