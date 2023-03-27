@@ -10,20 +10,12 @@ import Link from "@mui/material/Link";
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined'
 
 import Button from './Button'
-import { IconButton, InputAdornment } from "@mui/material";
-import { useState } from "react";
-import { Visibility, VisibilityOff } from "@mui/icons-material";
 
 
 // Theme
 const theme = createTheme()
 
 const Form = ({title, setEmail, setPassword, handleAction}) => {
-    // showPassword state
-    const [showPassword, setShowPassword] = useState(false);
-
-    // handleClickShowPassword function
-    const handleClickShowPassword = () => setShowPassword((show) => !show);
 
     return ( 
         <ThemeProvider theme={theme}>
@@ -99,20 +91,9 @@ const Form = ({title, setEmail, setPassword, handleAction}) => {
                                 id="password"
                                 label='Enter Your Password'
                                 variant="outlined"
-                                type={ showPassword ? 'text' : 'password'}
+                                type={'password'}
                                 required
                                 onChange={(e) => setPassword(e.target.value)}
-                                endadornment={
-                                    <InputAdornment position="end">
-                                        <IconButton
-                                            aria-label="toggle password visibility"
-                                            onClick={handleClickShowPassword}
-                                            edge="end"
-                                        >
-                                            {showPassword ? <VisibilityOff /> : <Visibility />}
-                                        </IconButton>
-                                    </InputAdornment>
-                                }
                             />
 
                             <Button title={title} handleAction={handleAction} />
