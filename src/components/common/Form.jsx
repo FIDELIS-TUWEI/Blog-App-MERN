@@ -10,8 +10,7 @@ import Link from "@mui/material/Link";
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined'
 
 import Button from './Button'
-import { InputAdornment } from "@mui/material";
-import VisibilityIcon from '@mui/icons-material/Visibility'
+import { IconButton, InputAdornment } from "@mui/material";
 
 
 // Theme
@@ -96,9 +95,17 @@ const Form = ({title, setEmail, setPassword, handleAction}) => {
                                 type={'password'}
                                 required
                                 onChange={(e) => setPassword(e.target.value)}
-                                InputProps={{
-                                    endAdornment: <InputAdornment><VisibilityIcon /></InputAdornment>
-                                }}
+                                endAdornment={
+                                    <InputAdornment position="end">
+                                        <IconButton
+                                            aria-label="toggle password visibility"
+                                            onClick={handleClickShowPassword}
+                                            edge="end"
+                                        >
+                                            {}
+                                        </IconButton>
+                                    </InputAdornment>
+                                }
                             />
 
                             <Button title={title} handleAction={handleAction} />
