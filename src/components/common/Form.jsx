@@ -11,12 +11,18 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined'
 
 import Button from './Button'
 import { IconButton, InputAdornment } from "@mui/material";
+import { useState } from "react";
 
 
 // Theme
 const theme = createTheme()
 
 const Form = ({title, setEmail, setPassword, handleAction}) => {
+    // showPassword state
+    const [showPassword, setShowPassword] = useState(false);
+
+    // handleClickShowPassword function
+    const handleClickShowPassword = () => setShowPassword((show) => !show);
 
     return ( 
         <ThemeProvider theme={theme}>
