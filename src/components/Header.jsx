@@ -1,4 +1,4 @@
-import React from 'react'
+import "../styles/header.css";
 
 const Header = () => {
   return (
@@ -6,4 +6,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Header;

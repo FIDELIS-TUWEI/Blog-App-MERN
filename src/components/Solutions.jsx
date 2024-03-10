@@ -1,3 +1,4 @@
+import "../styles/solutions.css";
 
 const Solutions = () => {
   return (

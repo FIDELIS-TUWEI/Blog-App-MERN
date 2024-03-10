@@ -1,4 +1,4 @@
-import React from 'react'
+import "../styles/services";
 
 const Services = () => {
   return (
@@ -6,4 +6,4 @@ const Services = () => {
   )
 }
 
-export default Services
+export default Services;

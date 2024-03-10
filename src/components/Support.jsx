@@ -1,3 +1,4 @@
+import "../styles/support.css";
 
 const Support = () => {
   return (

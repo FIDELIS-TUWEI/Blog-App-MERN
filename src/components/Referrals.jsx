@@ -1,3 +1,4 @@
+import "../styles/referrals.css";
 
 const Referrals = () => {
   return (

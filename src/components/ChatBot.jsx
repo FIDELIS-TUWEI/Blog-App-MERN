@@ -1,3 +1,4 @@
+import "../styles/chatBot.css";
 
 const ChatBot = () => {
   return (

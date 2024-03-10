@@ -1,3 +1,4 @@
+import "../styles/industry.css";
 
 const Industry = () => {
   return (
