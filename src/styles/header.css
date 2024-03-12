@@ -51,3 +51,104 @@
 .nav--list a:hover::after {
     width: 90%;
 }
+
+/* Burger Menu */
+.burger--menu {
+    color: gray;
+    font-size: 1.5rem;
+    position: fixed;
+    top: 0.7rem;
+    right: 0.3rem;
+    z-index: 150;
+    background: transparent;
+    cursor: pointer;
+    display: none;
+    padding: 10px;
+}
+
+.burger--menu:hover {
+    color: rgb(138, 125, 125);
+}
+
+@media screen and (max-width: 1300px) {
+    .header {
+        padding: 15px 5%;
+        transition: 0.3s ease-in;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .header {
+        padding: 15px 3%;
+        transition: 0.3s ease-in;
+    }
+
+    .nav--list {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .nav--list {
+        display: none;
+    }
+
+    .nav--divider {
+        display: none;
+    }
+
+    .burger--menu {
+        display: inline;
+    }
+}
+
+
+/* Responsive Menu styles */
+
+.res--menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 120;
+    background: #222044;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: transform 0.5s ease-in-out;
+    transform-origin: top right;
+    transform: scale(0);
+}
+
+.res--menu--open {
+    transform: scale(1);
+}
+
+.res--menu nav {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.res--menu .nav--list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    gap: 20px;
+    font-size: 1.2rem;
+}
+
+.res--menu {
+    padding-right: 0rem;
+    background: orangered;
+    color: #fff;
+    padding: 10px;
+    font-size: 2.8rem;
+    border: 2px solid orangered;
+}
+
