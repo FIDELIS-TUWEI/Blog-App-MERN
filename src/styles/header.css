@@ -35,13 +35,13 @@
     position: relative;
 }
 
-.nav--list::after {
+.nav--list a::after {
     content: '';
     display: block;
     width: 0;
     height: 3px;
     border-radius: 10px;
-    background: #ada7ff;
+    background: #e94f0d;
     position: absolute;
     bottom: -1rem;
     left: 0;
@@ -54,7 +54,7 @@
 
 /* Burger Menu */
 .burger--menu {
-    color: gray;
+    color: rgb(84, 84, 84);
     font-size: 1.5rem;
     position: fixed;
     top: 0.7rem;
@@ -85,6 +85,10 @@
 
     .nav--list {
         font-size: 10px;
+    }
+
+    .res--menu .nav--list li a {
+        color: #222044;
     }
 }
 
