@@ -12,8 +12,6 @@ function App() {
         <ResponsiveMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <Home />
-        <Services />
-        <Footer />
       </>
   )
 }
