@@ -3,8 +3,8 @@ import Header from './Header'
 
 const Home = () => {
   return (
-    <section>
-        <Header />
+    <section id="home">
+        <h1>Home</h1>
     </section>
   )
 }
