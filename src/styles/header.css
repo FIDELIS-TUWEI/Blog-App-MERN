@@ -1,0 +1,53 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10%;
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 100;
+    border: 1px solid #ececec;
+}
+
+.header--nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav--divider {
+    border-left: 1px dotted #777e90;
+    padding: 10px;
+}
+
+.nav--list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #777e90;
+    list-style: none;
+}
+
+.nav--list li a {
+    color: #777e90;
+    font-weight: bold;
+    position: relative;
+}
+
+.nav--list::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    border-radius: 10px;
+    background: #ada7ff;
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.nav--list a:hover::after {
+    width: 90%;
+}
