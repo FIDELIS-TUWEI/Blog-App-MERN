@@ -50,6 +50,14 @@ const Navbar = ({ setMenuOpen }) => {
           <img src={NavLogo} alt="Nav Logo" />
         </a>
       </div>
+      <div className="nav--divider"></div>
+      <ul className="nav--list">
+        <li><a href="#home"></a>Home</li>
+        <li><a href="#services"></a>Services</li>
+        <li><a href="#about"></a>About Us</li>
+        <li><a href="#references"></a>References</li>
+        <li><a href="#contact"></a>Contact</li>
+      </ul>
     </nav>
   )
 }
