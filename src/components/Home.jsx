@@ -1,10 +1,13 @@
 import "../styles/home.css";
-import Header from './Header'
+import Background from "../assets/background1.jpg";
 
 const Home = () => {
   return (
-    <section id="home">
-        <h1>Home</h1>
+    <section id="home" className="home">
+        <h1 className="home--title"></h1>
+        <div className="home--image">
+          <img src={Background} alt="background image" />
+        </div>
     </section>
   )
 }
