@@ -2,7 +2,7 @@ import "../styles/references.css";
 
 const Referrals = () => {
   return (
-    <div>Referrals</div>
+    <section id="references">Referrals</section>
   )
 }
 
