@@ -2,7 +2,7 @@ import "../styles/footer.css";
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <section id="contact">Footer</section>
   )
 }
 
