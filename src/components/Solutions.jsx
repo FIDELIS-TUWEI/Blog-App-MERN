@@ -2,7 +2,7 @@ import "../styles/solutions.css";
 
 const Solutions = () => {
   return (
-    <div>Solutions</div>
+    <section>Solutions</section>
   )
 }
 
