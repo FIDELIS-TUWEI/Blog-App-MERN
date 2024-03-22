@@ -44,23 +44,21 @@ const Navbar = ({ setMenuOpen }) => {
   };
 
   return (
-    <>
-      <nav className="header--nav">
-        <div className="nav--logo">
-          <a href="#" onClick={handleLinkClick}>
-            <img src={NavLogo} alt="Nav Logo" />
-          </a>
-        </div>
-        <div className="nav--divider"></div>
-        <ul className="nav--list">
-          <li><a href="#home"onClick={handleLinkClick}>Home</a></li>
-          <li><a href="#services"onClick={handleLinkClick}>Services</a></li>
-          <li><a href="#about"onClick={handleLinkClick}>About Us</a></li>
-          <li><a href="#references"onClick={handleLinkClick}>References</a></li>
-          <li><a href="#contact"onClick={handleLinkClick}>Contact</a></li>
-        </ul>
-      </nav>
-    </>
+    <nav className="header--nav">
+      <div className="nav--logo">
+        <a href="#home" onClick={handleLinkClick}>
+          <img src={NavLogo} alt="Nav Logo" />
+        </a>
+      </div>
+      <div className="nav--divider"></div>
+      <ul className="nav--list">
+        <li><a href="#home"onClick={handleLinkClick}>Home</a></li>
+        <li><a href="#services"onClick={handleLinkClick}>Services</a></li>
+        <li><a href="#about"onClick={handleLinkClick}>About Us</a></li>
+        <li><a href="#references"onClick={handleLinkClick}>References</a></li>
+        <li><a href="#contact"onClick={handleLinkClick}>Contact</a></li>
+      </ul>
+    </nav>
   )
 }
 
