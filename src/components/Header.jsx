@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import "../styles/header.css";
 import { HiX, HiMenu } from "react-icons/hi";
-import NavLogo from "../assets/nav-logo.png";
+import NavLogo from "../assets/ptc-banner.png";
 
 const Header = ({ menuOpen, setMenuOpen }) => {
   const menuIcon = menuOpen ? <HiX /> : <HiMenu />;
@@ -47,7 +47,7 @@ const Navbar = ({ setMenuOpen }) => {
     <nav className="header--nav">
       <div className="nav--logo">
         <a href="#home" onClick={handleLinkClick}>
-          <img src={NavLogo} alt="Nav Logo" />
+          <img src={NavLogo} alt="Nav Logo" className="nav--logo" />
         </a>
       </div>
       <div className="nav--divider"></div>
