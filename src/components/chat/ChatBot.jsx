@@ -1,4 +1,4 @@
-import "../styles/chatBot.css";
+import "./chatBot.css";
 
 const ChatBot = () => {
   return (

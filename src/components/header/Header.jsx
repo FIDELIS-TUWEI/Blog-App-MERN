@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
-import "../styles/header.css";
+import "./header.css";
 import { HiX, HiMenu } from "react-icons/hi";
-import NavLogo from "../assets/Logo.png";
+import NavLogo from "../../assets/Logo.png";
 
 const Header = ({ menuOpen, setMenuOpen }) => {
   const menuIcon = menuOpen ? <HiX /> : <HiMenu />;

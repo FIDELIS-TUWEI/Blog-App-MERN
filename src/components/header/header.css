@@ -17,8 +17,12 @@
 }
 
 .nav--logo {
-    width: 50%;
+    width: 40%;
     height: 30%;
+}
+
+.nav--logo > img {
+    background: #fff;
 }
 
 .nav--divider {
