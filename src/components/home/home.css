@@ -1,3 +1,25 @@
 .home--image img {
     width: 100%;
 }
+
+.home--info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 50px;
+}
+
+.banner--image {
+    border: 2px solid black;
+    border-top-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+
+.home--content {
+    line-height: 1.6;
+}
+
+.home--slogan {
+    margin-bottom: 20px;
+}
