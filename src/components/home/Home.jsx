@@ -15,11 +15,17 @@ const Home = () => {
           </div>
 
           <div className="home--content">
-            <h3 className="home--slogan">Leading Guest entertainment and communication solutions in Africa</h3>
+            <h2 className="home--slogan">Leading Guest entertainment and communication solutions in Africa</h2>
             <p className="home--text">
               In partnership with leading global ICT companies we design and deliver highly <br /> innovative solutions that add value to our clients’ service. <br />
               We have a strong commitment to good customer service delivered through our <br /> support offices in Nairobi.
             </p>
+
+            <div className="home--btn">
+              <button>More</button>
+              <button>Work with Us</button>
+            </div>
+            
           </div>
         </div>
     </section>
