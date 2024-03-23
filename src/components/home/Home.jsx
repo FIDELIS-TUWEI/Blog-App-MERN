@@ -35,17 +35,17 @@ const HeroContent = () => (
       <img src={SuccessBanner} alt="" />
 
       <div className="success--content">
-        <h3>10+ years of success stories across Africa</h3>
-        <small>
+        <p>10+ years of success stories across Africa</p>
+        <h3>
           Providing our clients with premium, Innovative solutions and enhanced overall customer experience.
-        </small>
+        </h3>
 
         <br />
         <button>Success Stories</button>
       </div>
       
   </div>
-)
+);
 
 const Home = () => {
   return (
