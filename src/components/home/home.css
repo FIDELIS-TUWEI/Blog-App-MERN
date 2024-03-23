@@ -55,6 +55,14 @@
     left: 50%;
 }
 
+.success--content p {
+    font-size: 1.2rem;
+}
+
+.success--content h3 {
+    font-size: 1.5rem;
+}
+
 .success--content button {
     margin-top: 10px;
     padding: 14px;
