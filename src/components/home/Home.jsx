@@ -7,6 +7,7 @@ const Home = () => {
         <div className="home--image">
           <img src={Background} alt="" />
         </div>
+        
     </section>
   )
 }
