@@ -41,7 +41,10 @@ const HeroContent = () => (
         </h3>
 
         <br />
+        
         <button>Success Stories</button>
+        <button>Start Today</button>
+
       </div>
       
   </div>
