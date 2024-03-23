@@ -38,3 +38,30 @@
 .home--btn button:hover {
     cursor: pointer;
 }
+
+.success--container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.success--container img {
+    width: 100%;
+}
+
+.success--content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.success--content button {
+    margin-top: 10px;
+    padding: 14px;
+    background: greenyellow;
+    color: #000;
+    cursor: pointer;
+    font-size: 1rem;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
