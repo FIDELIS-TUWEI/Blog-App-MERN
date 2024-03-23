@@ -42,19 +42,26 @@ const HeroContent = () => (
 
         <br />
         
-        <button>Success Stories</button>
-        <button>Start Today</button>
+        <button className="story--btn">Success Stories</button>
+        <button className="start--btn">Start Today</button>
 
       </div>
       
   </div>
 );
 
+const HeroSolutions = () => (
+  <div className="solutions--container">
+      <h4>Solutions</h4>
+  </div>
+)
+
 const Home = () => {
   return (
     <section id="home" className="home">
       <HeroLanding />
       <HeroContent />
+      <HeroSolutions />
     </section>
   )
 }
