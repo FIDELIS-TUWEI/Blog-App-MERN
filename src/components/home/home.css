@@ -14,6 +14,7 @@
     border: 2px solid black;
     border-top-left-radius: 5%;
     border-bottom-right-radius: 5%;
+    padding: 10px;
 }
 
 .home--content {
@@ -22,4 +23,18 @@
 
 .home--slogan {
     margin-bottom: 20px;
+}
+
+.home--btn {
+    display: flex;
+    gap: 20px;
+    margin-top: 5px;
+}
+
+.home--btn button {
+    padding: 10px;
+}
+
+.home--btn button:hover {
+    cursor: pointer;
 }
