@@ -133,12 +133,12 @@ const HeroService = () => (
 
       <div className="services--content">
         <h2>Service</h2>
-        <h6>Clientele</h6>
-      </div>
-
-      <div className="services-info">
-        <p>
-          During the warranty period and for the three types of contracts, our normal call response time is same day within Nairobi and 24 hours in other areas
+        <h5>Client Service</h5>
+        <p className="service--text">
+        Emergencies are responded to immediately including after office hours and holidays - <br />
+        with prior arrangement. Customers who sign-up for 24/7 service are given a stand by <br />
+        cell phone number to reach the engineer on after hours assignment for emergency <br /> 
+        reporting after office hours and holidays.
         </p>
       </div>
     </div>
