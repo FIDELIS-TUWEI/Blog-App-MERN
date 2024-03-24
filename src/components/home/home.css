@@ -91,15 +91,9 @@
     border-bottom-right-radius: 20%;
 }
 
-.solutions--container {
-    height: 5vh;
-    background-color: #333333;
-}
-
 .solutions--content {
     background-color: #333333;
-    height: 10vh;
-
+    height: 20vh;
 }
 
 .solutions--content h4 {
@@ -127,17 +121,30 @@
 .card--container {
     position: absolute;
     margin-top: -6rem;
-    left: 30%;
+    left: 20%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
 }
 
 .card--layout {
-    border: 1px solid red;
-    height: max-content;
+    padding: 10px;
+    border: 1px solid #333333;
+    height: 250px;
     width: 300px;
+    background-color: gray;
+    color: #fff;
+    text-align: start;
 }
+
+.card--title {
+    margin-bottom: 10px;
+}
+
+.card--layout > button {
+    margin-top: 1.5rem;
+}
+
 
 /* ======== MEDIA QUERY (SMALL DEVICES) ======== */
 @media screen and (max-width: 600px) {
