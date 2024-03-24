@@ -53,12 +53,10 @@ const HeroContent = () => (
 
 const HeroSolutions = () => (
   <>
-    <div className="solutions--container"></div>
     <div className="solutions--content">
       <h4>Solutions</h4>
       <h2>Expertise</h2>
     </div>
-    <div className="solutions--card"></div>
     <div className="card--container">
       <article className="card--layout">
         <div className="card--title">
