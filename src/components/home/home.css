@@ -114,10 +114,10 @@
 }
 
 .card--container {
-    margin-top: -6rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2rem;
+    margin: -6rem 10px 10px 10px;
 }
 
 .card--layout {
@@ -138,4 +138,8 @@
 
 .card--layout > button {
     margin-top: 1.2rem;
+}
+
+.services--container img {
+    width: 50%;
 }
