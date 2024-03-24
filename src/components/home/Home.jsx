@@ -2,6 +2,7 @@ import "./home.css";
 import Background from "../../assets/bg1.jpg";
 import Banner from "../../assets/Banner.png";
 import SuccessBanner from "../../assets/about2.jpg";
+import ServiceAgent from "../../assets/agent.jpg";
 
 const HeroLanding = () => (
   <>
@@ -126,6 +127,12 @@ const HeroSolutions = () => (
       </article>
     </div>
   </>
+);
+
+const HeroService = () => (
+    <div className="services--container">
+      <img src={ServiceAgent} alt="" />
+    </div>
 )
 
 const Home = () => {
@@ -134,6 +141,7 @@ const Home = () => {
       <HeroLanding />
       <HeroContent />
       <HeroSolutions />
+      <HeroService />
     </section>
   )
 }
