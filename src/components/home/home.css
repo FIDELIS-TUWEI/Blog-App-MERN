@@ -93,6 +93,13 @@
 
 .solutions--container {
     height: 5vh;
+    background-color: #333333;
+}
+
+.solutions--content {
+    background-color: #333333;
+    height: 10vh;
+
 }
 
 .solutions--content h4 {
@@ -114,13 +121,12 @@
 .solutions--card {
     position: relative;
     margin-top: 4rem;
-    height: 10vh;
     background-color: #333333;
 }
 
 .card--container {
     position: absolute;
-    margin-top: -8rem;
+    margin-top: -6rem;
     left: 30%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
