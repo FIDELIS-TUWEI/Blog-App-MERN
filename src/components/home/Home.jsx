@@ -66,7 +66,6 @@ const HeroSolutions = () => (
         <p>
           IPTV is the new generation of High Definition (HD) digital interactive television systems for hotels, communities and ships
         </p>
-        <button className="start--btn">Start Today</button>
       </article>
 
       <article className="card--layout">
@@ -77,7 +76,6 @@ const HeroSolutions = () => (
         <p>
           For today’s increasingly mobile world, a guest’s main focus is around High-Speed Internet Access (HSIA). The PTC HSIA platform is an ideal solution to connect the guest’s devices
         </p>
-        <button className="story--btn">Learn More</button>
       </article>
 
       <article className="card--layout">
@@ -88,7 +86,6 @@ const HeroSolutions = () => (
         <p>
           PTC offers Digital Signage solutions that relay eye-catching messages and promotions. Digital signage is one of the most effective communication mediums in the market
         </p>
-        <button className="story--btn">Learn More</button>
       </article>
 
       <article className="card--layout">
@@ -99,7 +96,6 @@ const HeroSolutions = () => (
         <p>
           We are installers of CCTV cameras offering the best high end CCTV equipment. Our cameras offer feature for remote viewing via mobile phone, tablet or PC
         </p>
-        <button className="start--btn">Learn More</button>
       </article>
 
       <article className="card--layout">
@@ -110,7 +106,6 @@ const HeroSolutions = () => (
         <p>
           Our Hotel Management software (AI-Powered) is an ideal application for hotel businesses. It is an integrated software solution that helps you manage the hotel's operations like booking, management, organization, and other related procedures
         </p>
-        <button className="story--btn">Learn More</button>
       </article>
 
       <article className="card--layout">
@@ -121,7 +116,6 @@ const HeroSolutions = () => (
         <p>
         At PTC, training forms a fundamental part of our total solution approach. We have qualified training personnel available to ensure that our clients are properly and efficiently trained in the operation of any equipment and software, which we provide
         </p>
-        <button className="story--btn">Learn More</button>
       </article>
     </div>
   </>
