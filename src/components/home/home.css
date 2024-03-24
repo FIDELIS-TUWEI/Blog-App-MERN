@@ -145,6 +145,7 @@
     align-items: center;
     text-align: center;
     background: lightyellow;
+    gap: 20px;
 }
 
 .services--container img {
@@ -152,5 +153,25 @@
 }
 
 .services--content {
-    margin-left: 1rem;
+    line-height: 1.6;
+}
+
+.services--content h2 {
+    position: relative;
+    color: #999999;
+    text-transform: uppercase;
+    font-size: 3rem;
+    opacity: 0.2;
+}
+
+.services--content h5 {
+    position: absolute;
+    left: 66%;
+    font-size: 1.5rem;
+    margin-top: -2.5rem;
+    color: skyblue;
+}
+
+.services--content p {
+    font-size: 1.2rem;
 }
