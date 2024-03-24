@@ -138,6 +138,11 @@ const HeroService = () => (
         <button>More</button>
       </div>
     </div>
+);
+
+const HeroFooter = () => (
+  <div className="footer--container">
+  </div>
 )
 
 const Home = () => {
@@ -147,6 +152,7 @@ const Home = () => {
       <HeroContent />
       <HeroSolutions />
       <HeroService />
+      <HeroFooter />
     </section>
   )
 }
