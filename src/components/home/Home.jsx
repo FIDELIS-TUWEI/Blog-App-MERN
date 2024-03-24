@@ -130,6 +130,17 @@ const HeroSolutions = () => (
 const HeroService = () => (
     <div className="services--container">
       <img src={ServiceAgent} alt="" />
+
+      <div className="services--content">
+        <h2>Service</h2>
+        <h6>Clientele</h6>
+      </div>
+
+      <div className="services-info">
+        <p>
+          During the warranty period and for the three types of contracts, our normal call response time is same day within Nairobi and 24 hours in other areas
+        </p>
+      </div>
     </div>
 )
 
