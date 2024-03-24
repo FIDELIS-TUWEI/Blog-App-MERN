@@ -175,3 +175,11 @@
 .services--content p {
     font-size: 1.2rem;
 }
+
+.services--content button {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
