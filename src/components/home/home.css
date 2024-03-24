@@ -140,6 +140,17 @@
     margin-top: 1.2rem;
 }
 
+.services--container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: lightyellow;
+}
+
 .services--container img {
     width: 50%;
+}
+
+.services--content {
+    margin-left: 1rem;
 }
