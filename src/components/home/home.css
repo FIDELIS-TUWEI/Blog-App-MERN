@@ -110,6 +110,7 @@
     position: absolute;
     left: 18%;
     margin-top: -1.5rem;
+    color: #fff;
 }
 
 .solutions--card {
@@ -129,8 +130,9 @@
 
 .card--layout {
     padding: 10px;
-    border: 1px solid #333333;
     height: 250px;
+    border-bottom-left-radius: 15%;
+    border-top-right-radius: 15%;
     width: 300px;
     background-color: gray;
     color: #fff;
@@ -142,7 +144,7 @@
 }
 
 .card--layout > button {
-    margin-top: 1.5rem;
+    margin-top: 1.2rem;
 }
 
 
