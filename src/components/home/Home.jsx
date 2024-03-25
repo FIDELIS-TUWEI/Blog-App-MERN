@@ -142,6 +142,15 @@ const HeroService = () => (
 
 const HeroFooter = () => (
   <div className="footer--container">
+    <div className="footer-content">
+      <ul>
+        <li>Privacy Policy</li>
+        <li>Terms of Use</li>
+        <li>Sitemap</li>
+      </ul>
+    </div>
+
+    <h4>&copy; PTC Hospitality Systems - All rights reserved.</h4>
   </div>
 )
 
