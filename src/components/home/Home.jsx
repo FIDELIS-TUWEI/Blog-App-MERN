@@ -199,7 +199,12 @@ const HeroContact = () => (
 )
 
 const HeroFooter = () => (
-  <div className="footer--container">
+  <motion.div 
+    className="footer--container"
+    initial={{ opacity: 0, y: 100 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 2 }}
+  >
     <div className="footer-content">
       <ul className="footer--list">
         <li>Privacy Policy</li>
@@ -215,7 +220,7 @@ const HeroFooter = () => (
       <div className="footer--divider"></div>
       <li>All rights reserved.</li>
     </ul>
-  </div>
+  </motion.div>
 )
 
 const Home = () => {
