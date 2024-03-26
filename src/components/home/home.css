@@ -261,3 +261,15 @@
     display: flex;
     gap: 1rem;
 }
+
+.footer--terms {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.footer--divider {
+    height: 1rem;
+    border-left: 1px solid #fff;
+}
