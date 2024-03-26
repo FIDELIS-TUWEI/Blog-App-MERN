@@ -206,3 +206,42 @@
     border-radius: 5px;
     cursor: pointer;
 }
+
+.contact--container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer--logo img {
+    width: 20%;
+}
+
+.socials--links {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.socials--links li a {
+    font-size: 1.5rem;
+}
+
+.contact--cards {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+}
+
+.contact--layout {
+    background: skyblue;
+    padding: 10px;
+    border-bottom-right-radius: 15%;
+    border-top-left-radius: 15%;
+    width: 250px;
+    text-align: start;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    line-height: 1.4;
+}
