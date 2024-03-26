@@ -151,8 +151,8 @@ const HeroSolutions = () => (
 const HeroService = () => (
     <div className="services--container">
       <motion.img src={ServiceAgent} alt="" 
-        initial={{ opacity: 0, x: -40 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, scale: 0 }}
+        whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 2 }}
       />
 
