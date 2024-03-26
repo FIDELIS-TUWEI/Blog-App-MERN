@@ -245,3 +245,19 @@
     margin-bottom: 5rem;
     line-height: 1.4;
 }
+
+.footer--container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #333333;
+    color: #fff;
+    height: 10vh;
+}
+
+.footer--list {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
