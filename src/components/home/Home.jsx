@@ -165,7 +165,12 @@ const HeroContact = () => (
       </div>
     </div>
     
-    <div className="contact--cards">
+    <motion.div 
+      className="contact--cards"
+      initial={{ opacity: 0, scale: 0.5 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 2 }}
+    >
       <article className="contact--layout">
         <div className="contact--info">
           <MdPhoneInTalk />
@@ -189,7 +194,7 @@ const HeroContact = () => (
           <span>Karen, <br /> Nairobi, KENYA</span>
         </div>
       </article>
-    </div>
+    </motion.div>
   </div>
 )
 
