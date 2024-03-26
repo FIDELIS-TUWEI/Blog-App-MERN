@@ -197,7 +197,7 @@ const HeroFooter = () => (
       </ul>
     </div>
 
-    <h4>&copy; PTC Hospitality Systems - All rights reserved.</h4>
+    <h4>Copyright &copy; { new Date().getFullYear() } PTC Hospitality Systems - All rights reserved.</h4>
   </div>
 )
 
