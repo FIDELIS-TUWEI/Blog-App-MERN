@@ -16,9 +16,9 @@ const HeroLanding = () => (
     </div>
         
     <div className="home--info">
-      <div className="banner--image">
+      <motion.div className="banner--image" whileHover={{ scale: 0.8 }}>
         <img src={Banner} alt="" />
-      </div>
+      </motion.div>
 
       <div className="home--content">
         <h2 className="home--slogan">Leading Guest entertainment and communication solutions in Africa</h2>
@@ -28,8 +28,18 @@ const HeroLanding = () => (
         </p>
 
         <div className="home--btn">
-          <button>More</button>
-          <button>Work with Us</button>
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            More
+          </motion.button>
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            Work with Us
+          </motion.button>
         </div>
       </div>
     </div>
