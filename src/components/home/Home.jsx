@@ -7,6 +7,7 @@ import Logo from "../../assets/Logo.png";
 import { FaLinkedin, FaInstagram, FaFacebook } from "react-icons/fa";
 import { FaSquareXTwitter, FaMapLocationDot } from "react-icons/fa6";
 import { MdEmail, MdPhoneInTalk } from "react-icons/md";
+import { motion } from "framer-motion";
 
 const HeroLanding = () => (
   <>
@@ -61,7 +62,12 @@ const HeroSolutions = () => (
       <h4>Solutions</h4>
       <h2>Expertise</h2>
     </div>
-    <div className="card--container">
+    <motion.div 
+      className="card--container"
+      initial={{ opacity: 0, x: -80 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 2 }}
+    >
       <article className="card--layout">
         <div className="card--title">
           <h5>IPTV</h5>
@@ -121,7 +127,7 @@ const HeroSolutions = () => (
         At PTC, training forms a fundamental part of our total solution approach. We have qualified training personnel available to ensure that our clients are properly and efficiently trained in the operation of any equipment and software, which we provide
         </p>
       </article>
-    </div>
+    </motion.div>
   </>
 );
 
