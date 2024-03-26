@@ -48,11 +48,8 @@ const HeroLanding = () => (
 
 const HeroContent = () => (
   <div className="success--container">
-      <motion.img 
+      <img 
         src={SuccessBanner} alt="" 
-        initial={{ opacity: 0, scale: 0 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 2 }}
       />
 
       <motion.div 
@@ -153,7 +150,11 @@ const HeroSolutions = () => (
 
 const HeroService = () => (
     <div className="services--container">
-      <img src={ServiceAgent} alt="" />
+      <motion.img src={ServiceAgent} alt="" 
+        initial={{ opacity: 0, x: -40 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 2 }}
+      />
 
       <div className="services--content">
         <h2>Service</h2>
@@ -165,7 +166,12 @@ const HeroService = () => (
         reporting after office hours and holidays.
         </p>
 
-        <button>More</button>
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          More
+        </motion.button>
       </div>
     </div>
 );
