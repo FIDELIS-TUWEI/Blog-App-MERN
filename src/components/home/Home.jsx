@@ -190,7 +190,7 @@ const HeroContact = () => (
 const HeroFooter = () => (
   <div className="footer--container">
     <div className="footer-content">
-      <ul>
+      <ul className="footer--list">
         <li>Privacy Policy</li>
         <li>Terms of Use</li>
         <li>Sitemap</li>
@@ -209,6 +209,7 @@ const Home = () => {
       <HeroSolutions />
       <HeroService />
       <HeroContact />
+      <HeroFooter />
     </section>
   )
 }
