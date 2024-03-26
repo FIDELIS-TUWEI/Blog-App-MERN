@@ -3,6 +3,10 @@ import Background from "../../assets/bg1.jpg";
 import Banner from "../../assets/Banner.png";
 import SuccessBanner from "../../assets/about2.jpg";
 import ServiceAgent from "../../assets/agent.jpg";
+import Logo from "../../assets/Logo.png";
+import { FaLinkedin, FaInstagram, FaFacebook } from "react-icons/fa";
+import { FaSquareXTwitter, FaMapLocationDot } from "react-icons/fa6";
+import { MdEmail, MdPhoneInTalk } from "react-icons/md";
 
 const HeroLanding = () => (
   <>
@@ -140,6 +144,49 @@ const HeroService = () => (
     </div>
 );
 
+const HeroContact = () => (
+  <div className="contact--container">
+    <div className="footer--logo">
+      <img src={Logo} alt="" />
+
+      <div className="socials--container">
+        <ul className="socials--links">
+          <li><a href="#linkedin"><FaLinkedin /></a></li>
+          <li><a href="#twitter"><FaSquareXTwitter /></a></li>
+          <li><a href="#facebook"><FaFacebook /></a></li>
+          <li><a href="#instagram"><FaInstagram /></a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div className="contact--cards">
+      <article className="contact--layout">
+        <div className="contact--info">
+          <MdPhoneInTalk />
+          <h6>Call Us</h6>
+          <span>(+254) 104 132 493</span>
+        </div>
+      </article>
+
+      <article className="contact--layout">
+        <div className="contact--info">
+          <MdEmail />
+          <h6>Email address</h6>
+          <span>info@ptc.co.ke</span>
+        </div>
+      </article>
+
+      <article className="contact--layout">
+        <div className="contact--info">
+          <FaMapLocationDot />
+          <h6>Location</h6>
+          <span>Karen, <br /> Nairobi, KENYA</span>
+        </div>
+      </article>
+    </div>
+  </div>
+)
+
 const HeroFooter = () => (
   <div className="footer--container">
     <div className="footer-content">
@@ -161,7 +208,7 @@ const Home = () => {
       <HeroContent />
       <HeroSolutions />
       <HeroService />
-      <HeroFooter />
+      <HeroContact />
     </section>
   )
 }
