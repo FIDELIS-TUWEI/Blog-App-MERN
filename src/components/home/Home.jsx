@@ -38,9 +38,19 @@ const HeroLanding = () => (
 
 const HeroContent = () => (
   <div className="success--container">
-      <img src={SuccessBanner} alt="" />
+      <motion.img 
+        src={SuccessBanner} alt="" 
+        initial={{ opacity: 0, scale: 0 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 2 }}
+      />
 
-      <div className="success--content">
+      <motion.div 
+        className="success--content"
+        initial={{ opacity: 0, scale: 0 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 2 }}
+      >
         <p>10+ years of success stories across Africa</p>
         <h3>
           Providing our clients with premium, Innovative solutions and enhanced overall customer experience.
@@ -51,7 +61,7 @@ const HeroContent = () => (
         <button className="story--btn">Success Stories</button>
         <button className="start--btn">Start Today</button>
 
-      </div>
+      </motion.div>
       
   </div>
 );
