@@ -197,7 +197,13 @@ const HeroFooter = () => (
       </ul>
     </div>
 
-    <h4>Copyright &copy; { new Date().getFullYear() } PTC Hospitality Systems - All rights reserved.</h4>
+    <ul className="footer--terms">
+      <li>Copyright &copy; { new Date().getFullYear() }</li>
+      <div className="footer--divider"></div>
+      <li>PTC Hospitality Systems</li>
+      <div className="footer--divider"></div>
+      <li>All rights reserved.</li>
+    </ul>
   </div>
 )
 
