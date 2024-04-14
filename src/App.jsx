@@ -1,10 +1,12 @@
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
+import {
+  Navbar, Hero, Analytics
+} from "./components/index"
 
 const App = () => (
 <div>
   <Navbar />
   <Hero />
+  <Analytics />
 </div>
 );
 
