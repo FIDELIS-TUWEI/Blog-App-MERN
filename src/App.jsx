@@ -1,3 +1,4 @@
+import NewsLetter from "./components/NewsLetter";
 import {
   Navbar, Hero, Analytics
 } from "./components/index"
@@ -7,6 +8,7 @@ const App = () => (
   <Navbar />
   <Hero />
   <Analytics />
+  <NewsLetter />
 </div>
 );
 
