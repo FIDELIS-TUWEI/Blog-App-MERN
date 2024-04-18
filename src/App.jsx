@@ -1,4 +1,5 @@
 import Cards from "./components/Cards";
+import Footer from "./components/Footer";
 import NewsLetter from "./components/NewsLetter";
 import {
   Navbar, Hero, Analytics
@@ -11,6 +12,7 @@ const App = () => (
   <Analytics />
   <NewsLetter />
   <Cards />
+  <Footer />
 </div>
 );
 
