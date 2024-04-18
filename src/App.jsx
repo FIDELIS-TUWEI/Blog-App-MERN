@@ -1,3 +1,4 @@
+import Cards from "./components/Cards";
 import NewsLetter from "./components/NewsLetter";
 import {
   Navbar, Hero, Analytics
@@ -9,6 +10,7 @@ const App = () => (
   <Hero />
   <Analytics />
   <NewsLetter />
+  <Cards />
 </div>
 );
 
