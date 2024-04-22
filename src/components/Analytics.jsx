@@ -2,12 +2,12 @@ import { laptop } from "../assets";
 
 const Analytics = () => {
   return (
-    <div className="w-full bg-white py-16 px-4">
+    <div className="w-full bg-white py-16 px-4" id="about">
       <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
         <img 
           className="w-[500px] mx-auto my-4"
           src={laptop} 
-          alt="laptop image" 
+          alt="laptop" 
         />
         <div>
           <p className="text-[#00df91] font-bold">
