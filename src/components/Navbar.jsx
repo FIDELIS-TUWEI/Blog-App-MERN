@@ -8,6 +8,10 @@ const Navbar = () => {
         setNav(!nav);
     };
 
+    const handleLinkClick = () => {
+        setNav(false)
+    }
+
   return (
     <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white">
         <h1 className="w-full text-3xl font-bold text-[#00df9a]">
@@ -28,11 +32,21 @@ const Navbar = () => {
                 REACT.
             </h1>
             <ul className="uppercase p-4">
-                <li className="p-4 border-b border-gray-600">Home</li>
-                <li className="p-4 border-b border-gray-600">Company</li>
-                <li className="p-4 border-b border-gray-600">Resources</li>
-                <li className="p-4 border-b border-gray-600">About</li>
-                <li className="p-4">Contact</li>
+                <li className="p-4 border-b border-gray-600">
+                    <a href="#home" onClick={handleLinkClick}>Home</a>
+                </li>
+                <li className="p-4 border-b border-gray-600">
+                    <a href="#company">Company</a>
+                </li>
+                <li className="p-4 border-b border-gray-600">
+                    <a href="#resources" onClick={handleLinkClick}>Resources</a>
+                </li>
+                <li className="p-4 border-b border-gray-600">
+                    <a href="#about" onClick={handleLinkClick}>About</a>
+                </li>
+                <li className="p-4">
+                    <a href="#contact" onClick={handleLinkClick}>Contact</a>
+                </li>
             </ul>
         </div>
     </div>
