@@ -18,11 +18,21 @@ const Navbar = () => {
             REACT.
         </h1>
         <ul className="hidden md:flex">
-            <li className="p-4">Home</li>
-            <li className="p-4">Company</li>
-            <li className="p-4">Resources</li>
-            <li className="p-4">About</li>
-            <li className="p-4">Contact</li>
+            <li className="p-4 border-b border-gray-600">
+                <a href="#home" onClick={handleLinkClick}>Home</a>
+            </li>
+            <li className="p-4 border-b border-gray-600">
+                <a href="#company">Company</a>
+            </li>
+            <li className="p-4 border-b border-gray-600">
+                <a href="#resources" onClick={handleLinkClick}>Resources</a>
+            </li>
+            <li className="p-4 border-b border-gray-600">
+                <a href="#about" onClick={handleLinkClick}>About</a>
+            </li>
+            <li className="p-4">
+                <a href="#contact" onClick={handleLinkClick}>Contact</a>
+            </li>
         </ul>
         <div onClick={handleNav} className="block md:hidden">
             {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
