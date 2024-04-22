@@ -18,16 +18,16 @@ const Navbar = () => {
             REACT.
         </h1>
         <ul className="hidden md:flex">
-            <li className="p-4 border-b border-gray-600">
+            <li className="p-4">
                 <a href="#home" onClick={handleLinkClick}>Home</a>
             </li>
-            <li className="p-4 border-b border-gray-600">
+            <li className="p-4">
                 <a href="#company">Company</a>
             </li>
-            <li className="p-4 border-b border-gray-600">
+            <li className="p-4">
                 <a href="#resources" onClick={handleLinkClick}>Resources</a>
             </li>
-            <li className="p-4 border-b border-gray-600">
+            <li className="p-4">
                 <a href="#about" onClick={handleLinkClick}>About</a>
             </li>
             <li className="p-4">
